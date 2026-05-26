@@ -115,9 +115,8 @@
     }
 
     .brand-logo {
-      width: 238px;
-      height: auto;
-      max-height: 66px;
+      width: min(238px, 42vw);
+      height: 66px;
       object-fit: contain;
     }
 
@@ -1321,6 +1320,20 @@
         font-weight: 800;
       }
 
+      .mobile-menu-brand {
+        gap: 12px;
+        min-height: 58px;
+        margin-bottom: 6px;
+        border: 1px solid var(--gray-200);
+        background: var(--cream);
+      }
+
+      .mobile-menu-icon {
+        width: 34px;
+        height: 34px;
+        object-fit: contain;
+      }
+
       .mobile-drawer a:hover,
       .mobile-drawer a:focus-visible {
         background: var(--gray-50);
@@ -1388,8 +1401,8 @@
       }
 
       .brand-logo {
-        width: 202px;
-        max-height: 58px;
+        width: min(202px, 52vw);
+        height: 58px;
       }
 
       .nav-actions .btn-primary {

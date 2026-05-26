@@ -32,7 +32,7 @@
     <header class="site-header" aria-label="Primary">
       <div class="nav-shell">
         <a class="brand" href="index.html" aria-label="Grace Connections HomeCare home">
-          <img class="brand-logo" src="assets/grace-connections-logo-header.png" alt="Grace Connections 24/7 Non-Medical Home Care" />
+          <img class="brand-logo" src="assets/grace-connections-main-logo.svg" alt="Grace Connections Non-Medical Home Care" />
         </a>
         <nav class="desktop-nav" aria-label="Main navigation">${navHtml}</nav>
         <div class="nav-actions">
@@ -45,6 +45,10 @@
       </div>
       <div class="mobile-drawer" id="mobile-menu">
         <nav aria-label="Mobile navigation">
+          <a class="mobile-menu-brand" href="index.html" aria-label="Grace Connections HomeCare home">
+            <img class="mobile-menu-icon" src="assets/grace-connections-icon.svg" alt="" />
+            <span>Grace Connections</span>
+          </a>
           ${navHtml}
           <a href="${phoneHref}">Call ${phone}</a>
         </nav>
@@ -58,7 +62,7 @@
         <div class="footer-grid">
           <div>
             <a class="brand footer-logo" href="index.html" aria-label="Grace Connections HomeCare home">
-              <img class="brand-logo" src="assets/grace-connections-logo-header.png" alt="Grace Connections 24/7 Non-Medical Home Care" />
+              <img class="brand-logo" src="assets/grace-connections-main-logo.svg" alt="Grace Connections Non-Medical Home Care" />
             </a>
             <p>Faith-based, non-medical 24/7 private-duty care for families across Illinois.</p>
           </div>

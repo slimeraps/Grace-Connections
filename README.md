@@ -36,6 +36,12 @@ Do not commit private API keys or secrets into this repository. If the final bac
 
 ## Changelog
 
+### 1.1.2 - 2026-05-26
+
+- Added the finalized Grace Connections SVG logo assets to the website asset library.
+- Replaced temporary header, footer, mobile menu, and favicon branding with the final primary logo and icon mark.
+- Improved responsive logo sizing and accessibility alt text for desktop and mobile navigation.
+
 ### 1.1.1 - 2026-05-26
 
 - Expanded the site into a multi-page Premium Growth Website structure with service, recruiting, resources, service-area, contact, thank-you, privacy, and terms/disclaimer pages.
