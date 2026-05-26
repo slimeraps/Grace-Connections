@@ -90,11 +90,17 @@
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
 
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
       const submitButton = form.querySelector('[type="submit"]');
       const success = getFormMessage(form, "form-success", "status");
       const error = getFormMessage(form, "form-error", "alert");
       const formType = form.dataset.form;
       const endpoint = form.getAttribute("data-endpoint") || formEndpoints[formType];
+      const redirectUrl = form.getAttribute("data-redirect");
       const payload = serializeForm(form);
 
       success.classList.remove("is-visible");
@@ -114,6 +120,11 @@
 
         success.classList.add("is-visible");
         form.reset();
+
+        if (redirectUrl) {
+          const separator = redirectUrl.includes("?") ? "&" : "?";
+          window.location.href = `${redirectUrl}${separator}form=${encodeURIComponent(formType || "request")}`;
+        }
       } catch (submissionError) {
         console.error(submissionError);
         error.textContent = "We could not send this request yet. Please call (630) 882-0803 or email graceconnectionshomecare@gmail.com.";

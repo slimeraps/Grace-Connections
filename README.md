@@ -13,6 +13,8 @@ This static site presents Grace Connections HomeCare as a warm, upscale, respons
 - `styles.css` - visual styling, responsive layout rules, and animations
 - `script.js` - navigation, scroll reveal, and form behavior
 - `site.config.js` - optional backend/CRM endpoint configuration for forms
+- `site-shell.js` - shared header, footer, mobile navigation, and sticky CTA for subpages
+- `about.html`, `services.html`, `senior-care.html`, `disability-support.html`, `adults-care.html`, `children-family-support.html`, `caregiver-support.html`, `join-team.html`, `service-areas.html`, `resources.html`, `contact.html`, `thank-you.html`, `privacy-policy.html`, `terms-disclaimer.html` - completed static page set
 - `assets/` - brand logo and care imagery used by the page
 - `DESIGN.md` - design notes from the original template
 
@@ -33,6 +35,12 @@ window.GRACE_CONNECTIONS_CONFIG = {
 Do not commit private API keys or secrets into this repository. If the final backend is Java-based, host it separately and point these endpoint values at the hosted API routes.
 
 ## Changelog
+
+### 1.1.1 - 2026-05-26
+
+- Expanded the site into a multi-page Premium Growth Website structure with service, recruiting, resources, service-area, contact, thank-you, privacy, and terms/disclaimer pages.
+- Improved homepage positioning, CTAs, service flow, SEO metadata, local service-area copy, and form privacy language.
+- Added caregiver recruiting content and application form structure.
 
 ### 1.0.1 - 2026-05-26
 
