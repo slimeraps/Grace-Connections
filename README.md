@@ -8,12 +8,37 @@ This static site presents Grace Connections HomeCare as a warm, upscale, respons
 
 ## Files
 
-- `index.html` - root entrypoint that redirects to the built landing page
-- `code.html` - main redesigned landing experience
+- `index.html` - main redesigned landing experience
+- `code.html` - compatibility copy of the same landing experience
+- `styles.css` - visual styling, responsive layout rules, and animations
+- `script.js` - navigation, scroll reveal, and form behavior
+- `site.config.js` - optional backend/CRM endpoint configuration for forms
 - `assets/` - brand logo and care imagery used by the page
 - `DESIGN.md` - design notes from the original template
 
+## Form Integration
+
+The site works as a static website by default. To connect prayer requests or consultation submissions to a backend, email automation tool, or CRM, add endpoint URLs in `site.config.js`.
+
+```js
+window.GRACE_CONNECTIONS_CONFIG = {
+  formEndpoints: {
+    consultation: "https://your-endpoint.example/consultation",
+    prayer: "https://your-endpoint.example/prayer",
+    careers: "https://your-endpoint.example/careers",
+  },
+};
+```
+
+Do not commit private API keys or secrets into this repository. If the final backend is Java-based, host it separately and point these endpoint values at the hosted API routes.
+
 ## Changelog
+
+### Unreleased
+
+- Split the website into dedicated HTML, CSS, JavaScript, and configuration files for easier maintenance.
+- Turned `index.html` into the primary homepage and kept `code.html` as a compatibility copy.
+- Added configurable form submission hooks for future backend, email, or CRM integrations.
 
 ### 1.0.0 - 2026-05-26
 

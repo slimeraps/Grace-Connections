@@ -1,15 +1,465 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="refresh" content="0; url=code.html" />
-  <title>Grace Connections HomeCare</title>
-  <link rel="canonical" href="code.html" />
+  <meta name="description" content="Grace Connections HomeCare provides 24/7 premium, faith-based non-medical home care, housekeeping, transportation, meal preparation, and friendly pet care across DuPage County and Metro Chicago." />
+  <title>Grace Connections HomeCare | 24/7 Faith-Based Non-Medical Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;family=Playfair+Display:wght@600;700;800&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main>
-    <p><a href="code.html">Open Grace Connections HomeCare</a></p>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <svg aria-hidden="true" width="0" height="0" style="position:absolute">
+    <symbol id="icon-heart-hand" viewBox="0 0 24 24"><path d="M11 14h2a2 2 0 0 0 0-4h-3c-.6 0-1.1.2-1.5.6L3 16"/><path d="m7 20 1.6-1.4c.4-.4 1-.6 1.6-.6H16c1.1 0 2.2-.5 2.9-1.4l2.4-3a2 2 0 0 0-3-2.6l-2.2 2.2"/><path d="M7.5 4.5c1.2-1.2 3.1-1.2 4.2 0l.3.3.3-.3c1.2-1.2 3.1-1.2 4.2 0s1.2 3.1 0 4.2L12 13.2 7.5 8.7a3 3 0 0 1 0-4.2Z"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.4-7.4 8.8a2 2 0 0 1-1.2 0C7.5 20.4 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.4a1.4 1.4 0 0 1 1.6 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.8 1.2 6.9-6.1-3.2L5.9 21l1.2-6.9-5-4.8 6.9-1Z"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></symbol>
+    <symbol id="icon-access" viewBox="0 0 24 24"><circle cx="12" cy="4" r="2"/><path d="m10 22 2-7 2 7"/><path d="m8 8 4 1 4-1"/><path d="M12 9v6"/></symbol>
+    <symbol id="icon-sparkle" viewBox="0 0 24 24"><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7Z"/><path d="M19 15v4"/><path d="M21 17h-4"/></symbol>
+    <symbol id="icon-utensils" viewBox="0 0 24 24"><path d="M4 3v8"/><path d="M8 3v8"/><path d="M4 7h4"/><path d="M6 11v10"/><path d="M16 3c2 1.8 3 4 3 6.5S18 14 16 16v5"/><path d="M16 3v13"/></symbol>
+    <symbol id="icon-car" viewBox="0 0 24 24"><path d="M19 17h2l-1.8-6.1A4 4 0 0 0 15.4 8H8.6a4 4 0 0 0-3.8 2.9L3 17h2"/><path d="M6 17h12"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="icon-paw" viewBox="0 0 24 24"><circle cx="5.5" cy="10.5" r="2.2"/><circle cx="9.5" cy="6.5" r="2.2"/><circle cx="14.5" cy="6.5" r="2.2"/><circle cx="18.5" cy="10.5" r="2.2"/><path d="M7.5 17.4c0-3 2-5.4 4.5-5.4s4.5 2.4 4.5 5.4c0 2-1.4 3.1-3.1 2.5a4.6 4.6 0 0 0-2.8 0c-1.7.6-3.1-.5-3.1-2.5Z"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  </svg>
+
+  <header class="site-header" aria-label="Primary">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Grace Connections HomeCare home">
+        <img class="brand-logo" src="assets/grace-connections-logo-header.png" alt="Grace Connections 24/7 Non-Medical Home Care" />
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#journey">Our Journey</a>
+        <a href="#careers">Careers</a>
+        <a href="#prayer">Prayer</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="#contact"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg>Schedule</a>
+        <a class="btn btn-secondary" href="tel:+16308820803"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>(630) 882-0803</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg class="icon" aria-hidden="true"><use href="#icon-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-drawer" id="mobile-menu">
+      <nav aria-label="Mobile navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#journey">Our Journey</a>
+        <a href="#careers">Join Our Team</a>
+        <a href="#prayer">Prayer &amp; Bible</a>
+        <a href="#contact">Schedule a Consultation</a>
+        <a href="tel:+16308820803">Call (630) 882-0803</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-copy reveal">
+          <h1>24/7 Premium, Faith-Based Non-Medical Home Care</h1>
+          <p class="lead">Compassionate support for seniors, adults, children, individuals with disabilities, and your friendly pets, delivered with dignity, moral integrity, empathy, and high performance.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg>Schedule a Consultation</a>
+            <a class="btn btn-secondary" href="#careers"><svg class="icon" aria-hidden="true"><use href="#icon-users"></use></svg>Join Our Team</a>
+          </div>
+          <div class="service-area" aria-label="Service area">
+            <svg class="icon" aria-hidden="true"><use href="#icon-map"></use></svg>
+            <span>Serving Illinois: DuPage County &amp; Metro Chicago <small>Private-duty care designed for homes, recovery routines, appointments, meals, and friendly pet companionship.</small></span>
+          </div>
+        </div>
+        <div class="hero-media reveal">
+          <img alt="Care associate providing calm in-home support for an older adult" src="assets/hero-care.jpg" />
+          <div class="hero-note">
+            <strong>Grace at home, around the clock.</strong>
+            <span>Personalized non-medical support, safe routines, and attentive companionship for every stage of care.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-strip" aria-labelledby="principles-title">
+      <div class="container">
+        <div class="principles reveal">
+          <article class="principle">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-heart-hand"></use></svg></div>
+            <h3 id="principles-title">Dignity</h3>
+            <p>Care plans respect personal history, privacy, family culture, and the comfort of home.</p>
+          </article>
+          <article class="principle">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-shield"></use></svg></div>
+            <h3>Moral Integrity</h3>
+            <p>Faith-based values guide how associates communicate, serve, document, and protect.</p>
+          </article>
+          <article class="principle">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-users"></use></svg></div>
+            <h3>Empathy</h3>
+            <p>Every visit is centered on patience, listening, reassurance, and practical relief.</p>
+          </article>
+          <article class="principle">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg></div>
+            <h3>High Performance</h3>
+            <p>Reliable associates, responsive coordination, and consistent standards for every household.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header center reveal">
+          <h2>Services That Meet the Whole Household</h2>
+          <p>Grace Connections HomeCare brings premium non-medical care, home support, transportation, nutrition, and friendly pet care into one dependable care model.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-heart-hand"></use></svg></div>
+            <h3>Elder &amp; Senior Care</h3>
+            <p>Personal care, ADLs, post-surgery recovery routines, mobility support, and companionship.</p>
+            <ul>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Bathing, grooming, dressing, and transfers</li>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Fall-aware routines and recovery support</li>
+            </ul>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-access"></use></svg></div>
+            <h3>Adult &amp; Disability Care</h3>
+            <p>Non-medical assistance for adults 21+, disabled adults, and children who need dependable daily support.</p>
+            <ul>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Daily routines, supervision, and respite</li>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Respectful care built around ability</li>
+            </ul>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-sparkle"></use></svg></div>
+            <h3>Quality Housekeeping</h3>
+            <p>Safe, organized homes with careful cleaning support and organic product options whenever possible.</p>
+            <ul>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Light cleaning, laundry, and organization</li>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Safer product choices for sensitive homes</li>
+            </ul>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-utensils"></use></svg></div>
+            <h3>Nutritional Guidance &amp; Meal Prep</h3>
+            <p>Daily or weekly planning, grocery support, and meal preparation including Tho-Down Benevolence Catering Services.</p>
+            <ul>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Diet-aware meals and hydration prompts</li>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Family-style catering coordination</li>
+            </ul>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-car"></use></svg></div>
+            <h3>Private &amp; Group Transportation</h3>
+            <p>Comfortable transportation for errands, medical appointments, pharmacy runs, church, and social plans.</p>
+            <ul>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Private or group transport options</li>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Errand support from door to door</li>
+            </ul>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-paw"></use></svg></div>
+            <h3>Friendly Pet Care</h3>
+            <p>In-home pet support that helps reduce anxiety while owners recover or receive daily care.</p>
+            <ul>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Feeding, walks, litter care, and comfort</li>
+              <li><svg class="icon check" aria-hidden="true"><use href="#icon-check"></use></svg>Support for friendly pets who thrive at home</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust" aria-labelledby="trust-title">
+      <div class="container">
+        <div class="trust-panel reveal">
+          <div>
+            <h2 id="trust-title">Why Families Choose Grace Connections</h2>
+            <p class="lead">Premium care should feel calm, clear, and protected. Our model is built to help families make confident decisions without sacrificing compassion, safety, or faith-based values.</p>
+            <p class="trust-note">Non-medical care, private pay support, and 24/7 responsiveness, all centered around dignity at home.</p>
+          </div>
+          <div class="trust-grid" aria-label="Trust and proof points">
+            <article class="trust-item">
+              <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-shield"></use></svg></div>
+              <h3>Vetted Associates</h3>
+              <p>Background checks and clear conduct expectations help protect every client and household.</p>
+            </article>
+            <article class="trust-item">
+              <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg></div>
+              <h3>24/7 Care Access</h3>
+              <p>Care needs do not wait for business hours, so families can reach out when support is needed.</p>
+            </article>
+            <article class="trust-item">
+              <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-heart-hand"></use></svg></div>
+              <h3>Faith-Based Service</h3>
+              <p>Care is guided by grace, patience, moral integrity, empathy, and respect for family values.</p>
+            </article>
+            <article class="trust-item">
+              <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-map"></use></svg></div>
+              <h3>Local Illinois Focus</h3>
+              <p>Service is centered on DuPage County, Metro Chicago, and surrounding Illinois communities.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey">
+      <div class="container journey-layout">
+        <div class="journey-media reveal">
+          <img alt="Care associate supporting an older adult at home with a friendly dog nearby" src="assets/pet-care.jpg" />
+          <div class="journey-badge" aria-label="Company timeline">
+            <div><strong>2008</strong><span>Care journey began</span></div>
+            <div><strong>2024</strong><span>Agency launch in March</span></div>
+          </div>
+        </div>
+        <div class="journey-copy reveal">
+          <h2>Our Journey Is Rooted in Faith, Safety, and Excellent Care</h2>
+          <p class="lead">Grace Connections began serving with a heart for families in 2008 and officially launched as an agency in March 2024. The mission remains personal: connect families with care associates who serve with strength, grace, and accountability.</p>
+          <div class="proof-list">
+            <article class="proof-item">
+              <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-shield"></use></svg></div>
+              <div><h3>100% Background Checks</h3><p>Every associate is screened before entering a client's home.</p></div>
+            </article>
+            <article class="proof-item">
+              <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-heart-hand"></use></svg></div>
+              <div><h3>Zero Tolerance for Abuse</h3><p>Strict safety expectations protect clients, families, pets, and associates.</p></div>
+            </article>
+            <article class="proof-item">
+              <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg></div>
+              <div><h3>High-Performance Associates</h3><p>Caregivers are selected for reliability, compassion, professionalism, and service quality.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header center reveal">
+          <h2 id="testimonials-title">What Families Can Expect</h2>
+          <p>Until more client reviews are ready to publish, these expectation statements clarify the experience Grace Connections is designed to provide.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <blockquote>Clear communication, practical help, and a care associate who treats the home with respect.</blockquote>
+            <cite>For adult children coordinating care</cite>
+          </article>
+          <article class="testimonial-card reveal">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <blockquote>Support that protects independence while making daily routines safer and less stressful.</blockquote>
+            <cite>For seniors and adults receiving care</cite>
+          </article>
+          <article class="testimonial-card reveal">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <blockquote>A thoughtful plan for meals, transportation, housekeeping, and friendly pets, not just one isolated task.</blockquote>
+            <cite>For busy families and recovery seasons</cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section careers" id="careers">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Join a Team Built on Strength &amp; Grace</h2>
+          <p>We recruit care associates and staff who bring skill, moral integrity, patience, and a genuine commitment to families across Illinois.</p>
+        </div>
+        <div class="career-grid">
+          <article class="career-card reveal">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-users"></use></svg></div>
+            <h3>Care Associates</h3>
+            <p>Support clients with personal care, companionship, daily routines, transportation, housekeeping, and meal preparation.</p>
+          </article>
+          <article class="career-card reveal">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-shield"></use></svg></div>
+            <h3>Safety-Minded Service</h3>
+            <p>Applicants should expect background checks, clear standards, and a culture that protects vulnerable clients.</p>
+          </article>
+          <article class="career-card reveal">
+            <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg></div>
+            <h3>Growth &amp; Purpose</h3>
+            <p>Bring your compassion into meaningful work where professionalism and faith-based service meet.</p>
+          </article>
+        </div>
+        <div class="careers-actions reveal">
+          <a class="btn btn-gold" href="#contact">Apply or Ask About Open Roles</a>
+          <a class="btn btn-secondary" href="mailto:graceconnectionshomecare@gmail.com">Email the Team</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section prayer" id="prayer">
+      <div class="container prayer-layout">
+        <div class="prayer-panel reveal">
+          <h2>Prayer &amp; Encouragement for the Care Journey</h2>
+          <p class="lead">Care decisions can feel heavy. Grace Connections makes space for faith, comfort, and prayer while respecting each family's preferences and boundaries.</p>
+          <div class="verse-card">
+            <blockquote>"My grace is sufficient for you, for my power is made perfect in weakness."</blockquote>
+            <cite>2 Corinthians 12:9</cite>
+          </div>
+        </div>
+        <form class="form-panel reveal" data-form="prayer" aria-label="Submit a prayer request">
+          <div class="form-grid">
+            <div class="field">
+              <label for="prayer-name">Name</label>
+              <input id="prayer-name" name="name" autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="prayer-email">Email</label>
+              <input id="prayer-email" name="email" type="email" autocomplete="email" />
+            </div>
+            <div class="field full">
+              <label for="prayer-request">Prayer request</label>
+              <textarea id="prayer-request" name="request" placeholder="Share only what you feel comfortable sharing."></textarea>
+            </div>
+            <div class="field full">
+              <button class="btn btn-primary" type="submit">Send Prayer Request</button>
+              <div class="form-success" role="status">Thank you. Your request has been received. Add a prayer endpoint in site.config.js to send submissions to a live inbox or CRM.</div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-layout">
+        <div class="reveal">
+          <h2>Schedule a 24/7 In-Home Consultation</h2>
+          <p class="lead">Tell us what support would relieve the most pressure right now. A coordinator can help discuss care needs, private pay options, cost-conscious models, and next steps.</p>
+          <div class="contact-card">
+            <a class="contact-link" href="tel:+16308820803">
+              <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg></div>
+              <span><strong>Call 24/7</strong><span>(630) 882-0803</span></span>
+            </a>
+            <a class="contact-link" href="mailto:graceconnectionshomecare@gmail.com">
+              <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg></div>
+              <span><strong>Email</strong><span>graceconnectionshomecare@gmail.com</span></span>
+            </a>
+            <a class="contact-link" href="https://www.graceconnectionshomecare.com/" target="_blank" rel="noreferrer">
+              <div class="icon-box"><svg class="icon" aria-hidden="true"><use href="#icon-map"></use></svg></div>
+              <span><strong>Illinois Service Area</strong><span>DuPage County, Metro Chicago, and surrounding communities</span></span>
+            </a>
+          </div>
+          <p class="billing-note">Private pay is accepted. Consultation conversations are designed to reduce financial stress with practical, cost-effective care planning.</p>
+        </div>
+        <form class="form-panel reveal" data-form="consultation" aria-label="Consultation intake form">
+          <div class="form-grid">
+            <div class="field">
+              <label for="first-name">First name</label>
+              <input id="first-name" name="firstName" autocomplete="given-name" required />
+            </div>
+            <div class="field">
+              <label for="last-name">Last name</label>
+              <input id="last-name" name="lastName" autocomplete="family-name" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="care-type">Type of care</label>
+              <select id="care-type" name="careType" required>
+                <option value="">Select an option</option>
+                <option>Elder &amp; senior care</option>
+                <option>Adult or disability care</option>
+                <option>Housekeeping</option>
+                <option>Meal preparation</option>
+                <option>Transportation</option>
+                <option>Friendly pet care</option>
+                <option>Career inquiry</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="timing">Ideal timing</label>
+              <select id="timing" name="timing">
+                <option>As soon as possible</option>
+                <option>This week</option>
+                <option>This month</option>
+                <option>Planning ahead</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">How can we help?</label>
+              <textarea id="message" name="message" placeholder="Share the care situation, service area, schedule, pet needs, or questions."></textarea>
+            </div>
+            <div class="field full">
+              <button class="btn btn-primary" type="submit">Request Consultation</button>
+              <div class="form-success" role="status">Thank you. Your consultation request has been received. Add a consultation endpoint in site.config.js to route submissions to a live inbox or CRM.</div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand footer-logo" href="#home" aria-label="Grace Connections HomeCare home">
+            <img class="brand-logo" src="assets/grace-connections-logo-header.png" alt="Grace Connections 24/7 Non-Medical Home Care" />
+          </a>
+          <p>Faith-based, non-medical 24/7 care for families, homes, and friendly pets across Illinois.</p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Senior care</a></li>
+            <li><a href="#services">Disability support</a></li>
+            <li><a href="#services">Housekeeping</a></li>
+            <li><a href="#services">Pet care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#journey">Our journey</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#prayer">Prayer &amp; Bible</a></li>
+            <li><a href="#contact">Consultation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:+16308820803">(630) 882-0803</a></li>
+            <li><a href="mailto:graceconnectionshomecare@gmail.com">graceconnectionshomecare@gmail.com</a></li>
+            <li>DuPage County &amp; Metro Chicago</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Grace Connections HomeCare. Strength &amp; Grace.</span>
+        <span>Private-duty, non-medical home care. Emergency medical needs should be directed to 911.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" aria-label="Quick contact actions">
+    <a class="btn btn-primary" href="tel:+16308820803"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>Call</a>
+    <a class="btn btn-secondary" href="#contact"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg>Schedule</a>
+  </div>
+  <script src="site.config.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
