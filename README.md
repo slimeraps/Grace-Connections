@@ -34,7 +34,7 @@ Do not commit private API keys or secrets into this repository. If the final bac
 
 ## Changelog
 
-### Unreleased
+### 1.0.1 - 2026-05-26
 
 - Split the website into dedicated HTML, CSS, JavaScript, and configuration files for easier maintenance.
 - Turned `index.html` into the primary homepage and kept `code.html` as a compatibility copy.
